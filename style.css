@@ -1,3 +1,267 @@
 /* CSS written by Hannah Groves*/
 
 /* GLOBAL STYLES (MOBILE FIRST)*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #fffdf2;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: "Arial";
+    text-align: center;
+    margin: 1rem;
+}
+
+header {
+  background-image: url("https://www.wilbanksreptiles.com/cdn/shop/articles/pied_ball_python_beginner_guide_592a58a3-b527-4e79-a973-ebdccc35b47d_1080x.jpg?v=1762814023");
+  background-size: 100%;
+  background-position:center;
+  border: 5px solid #714019;
+  padding: 2em;
+  margin: 1rem;
+}
+
+h1{
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 0px black;
+}
+
+nav{
+    border-bottom: 5px solid #714019;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+nav a, footer a {
+  text-decoration: none;
+  color: #714019;
+  background-color: #c39b55;
+  padding: 10px 15px 10px 15px;
+  border: 5px solid #714019;
+  width: auto;
+  display: block;
+  margin: 1rem;
+}
+
+footer {
+    border: 5px dotted #714019;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+aside li {
+    padding: 1rem;
+    color: #714019;
+    list-style: none;
+}
+
+aside h2 {
+    text-align: center;
+    color: #714019;
+}
+
+ aside a {
+    color: #c39b55;
+}
+
+aside{
+    border: 5px solid #714019;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+main {
+    margin: 2rem .5rem .5rem .5rem;
+    padding: .5rem;
+    list-style-position: inside;
+}
+/* learned list styling here: https://stackoverflow.com/questions/54434818/css-giving-border-to-li
+*/
+
+h2 {
+    text-decoration: underline;
+    padding: .5rem;
+}
+
+h3 {
+    text-align: center;
+    border: 2px solid;
+    margin: .5rem;
+}
+
+section p, section li {
+    text-align: justify;
+    padding: 1rem;
+}
+
+footer p {
+    padding: .5em 0 0 0;
+}
+
+.card-row {
+    gap: 1rem;
+}
+
+img {
+    display: block;
+    margin: auto auto 3rem auto;
+    border: 5px solid #714019;
+    padding: .5rem;
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        background-size: 125%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+    border-bottom: none;
+    }
+
+    aside a:hover {
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    aside{
+        border: 5px solid #714019;
+        margin: 3rem 0 0 1rem;
+        height: 70vh;
+        position: sticky;
+        top: 5%;
+    }
+    /*learned sticky sidebar here: https://dev.to/clairecodes/how-to-make-a-sticky-sidebar-with-two-lines-of-css-2ki7*/
+
+}
+
+
+
+
+
+@media screen and (min-width: 1075px) {
+    body {
+        grid-template-columns: 1fr .25fr;
+        padding: 1rem 1rem 0rem 1rem;
+    }
+
+    header {
+        padding: 3rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav a, footer a {
+        text-decoration: none;
+        color: #714019;
+        background-color: #c39b55;
+        padding: 10px 15px 10px 15px;
+        border: 5px solid #714019;
+        margin: 0;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    header, nav, footer {
+        grid-column: 1/3;
+        text-align: center;
+    }
+
+    footer {
+        border: 5px dotted #714019;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    aside li {
+        padding: 1rem;
+        color: #714019;
+    }
+
+    aside h2 {
+        text-align: center;
+        color: #714019;
+    }
+
+    aside a {
+        color: #c39b55;
+    }
+
+    aside{
+        border: 5px solid #714019;
+        margin: 1rem 0 0 1rem;
+        height: 70vh;
+        position: sticky;
+        top: 5%;
+    }
+    /*learned sticky sidebar here: https://dev.to/clairecodes/how-to-make-a-sticky-sidebar-with-two-lines-of-css-2ki7*/
+
+    h2 {
+        text-decoration: underline;
+        padding: .5rem .5rem 0rem .5rem;
+    }
+
+    h3 {
+        text-align: center;
+        border: 2px solid;
+    }
+
+    section p, section li {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    footer p {
+        padding: 1rem 0 0 0;
+    }
+
+    footer h2 {
+        padding: 0 0 .5rem 0;
+    }
+
+    .card-row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .card-row > section {
+         flex: 1 1 .5rem;
+    }
+
+    img {
+        display: block;
+        margin: auto auto 5rem auto;
+        border: 5px solid #714019;
+        padding: .5rem;
+    }
+}
