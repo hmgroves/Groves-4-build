@@ -75,7 +75,7 @@ aside h2 {
 aside{
     border: 5px solid #714019;
     margin: .5rem;
-    padding: .5rem;
+    padding: .5rem .5rem 0 .5rem;
 }
 
 main {
@@ -123,7 +123,7 @@ img {
 
 @media screen and (min-width: 800px) {
     body {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr .3fr;
     }
 
     header {
@@ -148,9 +148,11 @@ img {
         height: 70vh;
         position: sticky;
         top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     /*learned sticky sidebar here: https://dev.to/clairecodes/how-to-make-a-sticky-sidebar-with-two-lines-of-css-2ki7*/
-
 }
 
 
@@ -183,7 +185,7 @@ img {
         background-color: #c39b55;
         padding: 10px 15px 10px 15px;
         border: 5px solid #714019;
-        margin: 0;
+        display: inline-block;
     }
 
     a:hover {
@@ -197,10 +199,6 @@ img {
 
     footer {
         border: 5px dotted #714019;
-    }
-
-    nav {
-        padding: 1rem;
     }
 
     aside li {
@@ -221,23 +219,12 @@ img {
         border: 5px solid #714019;
         margin: 1rem 0 0 1rem;
         height: 70vh;
-        position: sticky;
         top: 5%;
     }
-    /*learned sticky sidebar here: https://dev.to/clairecodes/how-to-make-a-sticky-sidebar-with-two-lines-of-css-2ki7*/
-
-    h2 {
-        text-decoration: underline;
-        padding: .5rem .5rem 0rem .5rem;
-    }
-
+    
     h3 {
         text-align: center;
         border: 2px solid;
-    }
-
-    section p, section li {
-        padding: 0 1rem 1rem 1rem;
     }
 
     footer p {
@@ -256,12 +243,5 @@ img {
 
     .card-row > section {
          flex: 1 1 .5rem;
-    }
-
-    img {
-        display: block;
-        margin: auto auto 5rem auto;
-        border: 5px solid #714019;
-        padding: .5rem;
     }
 }
